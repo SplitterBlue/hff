@@ -1,0 +1,23 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hoveringInterface {
+    position: fixed;
+    text-align: left;
+    background-color: rgb(0, 0, 0);
+    border-radius:25px;
+    padding-top:10px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:10px;
+    top: 30px;
+    left: 30px;
+    height:100px;
+}
+
+.top-left {
+    position:relative
+}
