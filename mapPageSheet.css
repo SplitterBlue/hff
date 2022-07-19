@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Merriweather&family=Roboto:wght@100;300&display=swap');
+
+body {
+    background-color: beige;
+  font-family: 'Merriweather', serif;
+  height: 100%;
+  margin: 0;
+}
+
 .container {
     position: relative;
     text-align: center;
@@ -7,17 +16,24 @@
 .hoveringInterface {
     position: fixed;
     text-align: left;
-    background-color: rgb(0, 0, 0);
-    border-radius:25px;
-    padding-top:10px;
-    padding-left:15px;
-    padding-right:15px;
-    padding-bottom:10px;
-    top: 30px;
-    left: 30px;
-    height:100px;
+    background-color: rgba(0, 0, 0, 0.5 );
+    padding: 10px 15px 15px 10px;    
+    top:0;
+    left: 0;
+    height:100%;
+    margin: 0;
+    z-index: 999;
+    width: 20vh;
 }
 
 .top-left {
-    position:relative
+    position:relative;
+    text-align: center;
+
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
