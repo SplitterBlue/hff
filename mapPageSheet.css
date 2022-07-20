@@ -1,35 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Merriweather&family=Roboto:wght@100;300&display=swap');
-
-body {
-    background-color: beige;
-  font-family: 'Merriweather', serif;
-  height: 100%;
-  margin: 0;
-}
-
 .container {
     position: relative;
     text-align: center;
-    color: white;
+    color: black;
 }
 
-.hoveringInterface {
+.interface {
     position: fixed;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.5 );
-    padding: 10px 15px 15px 10px;    
+    background-color: rgba(255, 255, 255, 1); 
     top:0;
     left: 0;
     height:100%;
     margin: 0;
-    z-index: 999;
-    width: 20vh;
+    width: 55vh;
 }
 
-.top-left {
+.text-container {
     position:relative;
     text-align: center;
-
+    color: black;
 }
 
 .map {
@@ -37,3 +26,102 @@ body {
     width: 100%;
     margin: 0;
 }
+
+
+.icon {
+    width: 3vh;
+    height: 3vh;
+    opacity: 30%;
+    right: 0px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    transform: translateY(-50%);
+    padding-right: 4vh;
+}
+
+/* current user card styling */
+
+.user-card {
+    position: relative;
+    margin: 3vh 0 5vh 0;
+    padding: 1vh;
+}
+
+.text-card {
+    width: 30vh;
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 2vh;
+}
+
+.title-card {
+    font-size: 2.3vh;
+    margin: 0;
+}
+
+.subtitle-card {
+    font-size: 1.5vh;
+    color: gray;
+    margin: 0;
+}
+
+.online-card {
+    font-size: 1.2vh;
+    color: #99CC00;
+    font-weight: bold;
+    margin-top: .4vh;
+    
+}
+
+/* avatar and online button */
+
+.avatar-card {
+    margin: 2vh;
+    position: relative;
+    width: 7vh;
+    height: 7vh;
+    display: inline-block;
+}
+
+.avatar-card img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.indicator-card {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    background-color: #99CC00;
+    border: .3vh solid white;
+    border-radius: 50%;
+    bottom: -10%;
+    right: 0;
+}
+
+/* to do: the rest of it */ 
+.input {
+    display: flex;
+}
+input {
+    flex-grow: .8;
+    background-color: rgb(247, 247, 247);
+    border: .5vh solid rgb(242, 242, 242);
+    border-radius: 1.5vh;
+    padding: 1vh;
+    outline: none;
+    margin: 0 auto;
+}
+input::placeholder {
+    color: silver;
+    padding-left: 1.5vh;
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
+

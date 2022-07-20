@@ -2,19 +2,44 @@
 <html>
 
     <head>
-        <title>food finder</title>
+        <title>Food Finder</title>
+        <link rel="stylesheet" href="mapPageSheet.css">
+        <link rel="stylesheet" href="stylesheet.css">
         <link rel="icon" href="images/house.png">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0" charset="UTF-8">
     </head>
 
     <body>
-        <link rel="stylesheet" href="mapPageSheet.css">
+        
 
         <div class="container">
             <img src="images/lagos-nigeria.jpg" alt="daMap"class="map">
-            
-            <div class="hoveringInterface">
-                <div class="top-left">Find Food:</div>
+
+            <!-- this is the entire left side of the screen, 
+                    holding all of the various chat widgets and things -->
+
+            <div class="interface">
+
+                <!-- this is the current user's card -->
+                
+                <div class="user-card">
+                    <div class="avatar-card">
+                        <img src="https://www.w3schools.com/howto/img_avatar.png">
+                        <div class="indicator-card"></div>
+                    </div>
+                    <div class="text-card">
+                        <p class="title-card">Luke Strumner</p>
+                        <p class="subtitle-card">Senior Full-Stack Developer</p>
+                        <p class="online-card">Online</p>
+                    </div>
+                    <img src="images/icons/settings.svg" class="icon"> 
+                    
+                </div>
+                <div class="input">
+                    <input class="user-search" placeholder="Search People">
+                </div>
+                
+                <!-- this is where all the other stuff will be!! -->
             </div>
 
         </div>

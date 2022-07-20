@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Merriweather&family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 html {
-height: 100%;
+  height: 100%;
 }
 body {
   background-color: beige;
-  font-family: 'Merriweather', serif;
+  font-family: 'Poppins', sans-serif;
   height: 100%;
   margin: 0;
 }
@@ -16,7 +16,6 @@ h1 {
 }
 
 .parent {
-  
   height: 100%;
   display: flex;
   justify-content: center;
@@ -79,3 +78,4 @@ h1 {
   bottom: -3px;
 }
 
+/* end of stolen button code */
