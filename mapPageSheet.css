@@ -27,17 +27,29 @@
     margin: 0;
 }
 
-
 .icon {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    width: 4vh;
+    height: 100%;
+    transform: translateX(-4vh);
+}
+
+.icon img {
     width: 4vh;
     height: 4vh;
     opacity: 30%;
-    right: 0px;
-    position: absolute;
-    top: 50%;
-    display: inline-block;
-    transform: translateY(-50%);
-    padding-right: 4vh;
+    transition: all 0.2s;
+}
+
+.icon img:hover {
+    opacity: 50%;
+    transform: rotate(90deg);
+    transform-origin: center;
+
 }
 
 /* current user card styling */
@@ -190,7 +202,7 @@ input:focus::placeholder {
 
 .difindicator-subcard {
     font-size: 1.5vh;
-    color: silver;
+    color: gray;
     right: 0px;
     position: absolute;
     top: 50%;
@@ -199,4 +211,12 @@ input:focus::placeholder {
     padding-right: 4vh;
 }
 
+.subcard-collection {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    pointer-events: auto;
+    height: 100%;
+}
 /* to do: the rest of it */ 
+
