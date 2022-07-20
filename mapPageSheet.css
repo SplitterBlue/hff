@@ -102,18 +102,17 @@
     right: 0;
 }
 
-/* to do: the rest of it */ 
 .input {
     display: flex;
 }
 input {
-    flex-grow: .8;
+    flex-grow: 1;
     background-color: rgb(247, 247, 247);
     border: .5vh solid rgb(242, 242, 242);
     border-radius: 1.5vh;
     padding: 1vh;
     outline: none;
-    margin: 0 auto;
+    margin-bottom: 3vh;
 }
 input::placeholder {
     color: silver;
@@ -124,4 +123,80 @@ input:focus::placeholder {
     color: transparent;
   }
 
+/* other users ! */
 
+.user-subcard {
+    position: relative;
+    display: flex;
+    border: .5vh solid rgba(242, 242, 242, 0);
+    cursor: pointer;
+}
+
+.user-subcard:hover {
+    border: .5vh solid rgb(242, 242, 242);
+    background-color: rgb(247, 247, 247);
+}
+
+.avatar-subcard {
+    margin: 2vh;
+    position: relative;
+    width: 6vh;
+    height: 6vh;
+    display: inline-block;
+}
+
+.avatar-subcard img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.indicator-subcard {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    background-color: #99CC00;
+    border: .3vh solid white;
+    border-radius: 50%;
+    bottom: -10%;
+    right: 0;
+}
+
+.subuser-subcard {
+    outline: none;
+    margin: 0 auto;
+    flex-grow: 1;
+    border-radius: 1.5vh;
+}
+
+.title-subcard {
+    font-size: 2.1vh;
+    margin: 0;
+}
+
+.subtitle-subcard {
+    font-size: 1.5vh;
+    color: silver;
+    margin: 0;
+}
+
+.text-subcard {
+    width: 30vh;
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 2vh;
+}
+
+.difindicator-subcard {
+    font-size: 1.5vh;
+    color: silver;
+    right: 0px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    transform: translateY(-50%);
+    padding-right: 4vh;
+}
+
+/* to do: the rest of it */ 
