@@ -13,6 +13,9 @@
     /* The width is the width of the web page */
   }
 
+
+  /* interface code */ 
+  
 .interface {
     position: fixed;
     text-align: left;
@@ -22,6 +25,10 @@
     height:100%;
     margin: 0;
     width: 55vh;
+}
+
+.collapse-button {
+    
 }
 
 .text-container {
