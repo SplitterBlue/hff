@@ -25,6 +25,15 @@ h1 {
   gap: 10px;
 }
 
+
+
+/*
+.g-signin2{
+  height:100%;
+  border-radius: 20px;
+  color:#196090;
+}
+*/
 /* stolen button code https://codepen.io/rauldronca/pen/PzMgzp */
 
 .button::after, .button::before {
