@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+  height: 100%;
+}
+body {
+  background-color: beige;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #6767D4;
+}
+
+.parent {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* stolen button code https://codepen.io/rauldronca/pen/PzMgzp */
+
+.button::after, .button::before {
+  position: absolute;
+  content: "";
+  transition: all 0.2s;
+}
+
+.button {
+  transform: translateY(100px);
+  position: absolute;
+  padding: 10px 20px;
+  color: white; 
+  vertical-align: middle;
+  text-decoration: none;
+  transition: all 0.2s;
+  background-color: #3498db;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+.button::before {
+  bottom: -15px;
+  height: 15px;
+  width: 100%;
+  left: 8px;
+  transform: skewX(45deg);
+  background-color: #196090;
+}
+.button::after {
+  right: -15px;
+  height: 100%;
+  width: 15px;
+  bottom: -8px;
+  transform: skewY(45deg);
+  background-color: #124364;
+}
+.button:active {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.button:active::before {
+  bottom: -5px;
+  height: 5px;
+  left: 3px;
+}
+.button:active::after {
+  right: -5px;
+  width: 5px;
+  bottom: -3px;
+}
+
+/* end of stolen button code */
