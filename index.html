@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--adding jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
         <meta name="viewport" content="width=device-width, height=device-height,
             initial-scale=1.0, minimum-scale=1.0" charset="UTF-8">
         <link rel="icon" href="images/house.png">
         
-        
+        <script type="text/javascript" src="login-client.js"></script>
+        <!-- <script src="login-client.js"></script> -->
+
     </head>
-    
+
     <body>
 
 
@@ -15,21 +20,16 @@
         <link rel="stylesheet" href="stylesheet.css">
         <div class="parent">
             <h1>Homeless Food Finder</h1>
-            <script src="login-client.js"></script>
+            
             <script src="https://accounts.google.com/gsi/client" async defer></script>
+
             <div id="g_id_onload"
                 data-client_id="google-signin-client_id"
                 data-callback="true"
-                data-auto_prompt="false">
+                data-auto_prompt="true">
             </div>
             <div class="g_id_signin"
-                data-type="standard"
-                data-size="large"
-                data-theme="outline"
-                data-text="sign_in_with"
-                data-shape="rectangular"
-                data-logo_alignment="left">
-            </div>
+                ></div>
 
             <a class="button" href="mapPage.html">Open Application</a>
 
