@@ -7,9 +7,14 @@
         <meta name="viewport" content="width=device-width, height=device-height,
             initial-scale=1.0, minimum-scale=1.0" charset="UTF-8">
         <link rel="icon" href="images/house.png">
-        
-        <script type="text/javascript" src="login-client.js"></script>
-        <!-- <script src="login-client.js"></script> -->
+        <meta id="login-client-code">
+
+
+
+
+
+        <!--<script type="text/javascript" src="login-client.js"></script>
+         <script src="login-client.js"></script> -->
 
     </head>
 
@@ -19,16 +24,16 @@
 
         <link rel="stylesheet" href="stylesheet.css">
         <div class="parent">
-            <h1>Homeless Food Finder</h1>
+            <h1 id = 'poop' class = '' >Homeless Food Finder</h1>
             
             <script src="https://accounts.google.com/gsi/client" async defer></script>
 
-            <div id="g_id_onload"
+            <button id="g_id_onload"
                 class = 'button g_id_signin'
-                data-client_id="google-signin-client_id"
+                data-client_id=""
                 data-callback="true"
                 data-auto_prompt="true">
-            </div>
+            </button>
 
 <!--            <div class="g_id_signin" ></div>-->
             
@@ -36,6 +41,11 @@
 
         </div>
     </body>
+
+    <script type="text/javascript">
+        var KEY = prompt("paste login key");
+        document.getElementById("g_id_onload").setAttribute('data-client_id',KEY);
+    </script>
     <!--
         html! is bad!
     -->
